@@ -1,0 +1,82 @@
+@use '../abstracts' as *;
+
+body {
+    footer {
+        background: #0D2436;
+        padding-top: 55px;
+        padding-bottom: 25px;
+        .footer-content {
+            margin-bottom: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 80px;
+            justify-content: space-between;
+            .logo-part {
+                div {
+                    margin-top: 144px;
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                }
+            }
+            .services-links {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 97px;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    h4 {
+                        color: white;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        margin-bottom: 8px;
+                    }
+                    li {
+                        a {
+                            color: white;
+                            font-size: 16px;
+                            font-weight: 300;
+                            line-height: 26px;
+                        }
+                    }
+                    p {
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 16.71px;
+                        color: #C4CDD5;
+                    }
+                    .for-mb {
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+        .footer-bottom {
+            div {
+                height: 1px;
+                width: 100%;
+                background: #203646;
+                margin-bottom: 24px;
+            }
+            p {
+                text-align: center;
+                font-size: 14px;
+                font-weight: 400;
+                color: #9ea7af;
+            }
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    footer {
+        .logo-part {
+            div {
+                margin-top: 40px !important;
+            }
+        }
+    }
+}

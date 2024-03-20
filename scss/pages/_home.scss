@@ -1,0 +1,440 @@
+@use "../abstracts" as *;
+
+body {
+    main {
+        .cards-section{
+            padding: 20px 0 70px 0;
+            .pages {
+                color: #141414;
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 40px;
+                cursor: pointer;
+                span {
+                    color: #9d9d9d;
+                }
+            }
+            h2 {
+                color: black;
+                font-family: SFpro600;
+                font-size: 28px;
+                line-height: 42px;
+                margin-bottom: 60px;
+                span {
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 28px;
+                }
+            }
+            .products-group {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 29.3px;
+                flex-wrap: wrap;
+                .product {
+                    width: 288px;
+                    background: $color-fifth;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    .product-img {
+                        width: 200px;
+                    }
+                    .product-title {
+                        background: white;
+                        padding: 10px 12px;
+                        border-bottom: 1px solid #eaeaea;
+                        border-left: 1px solid #eaeaea;
+                        border-right: 1px solid #eaeaea;
+                        h3 {
+                            font-size: 24px;
+                            margin-bottom: 6px;
+                        }
+                        div {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                            margin-bottom: 6px;
+                            p {
+                                color: $color-fourth;
+                                font-size: 13px;
+                                line-height: 21px;
+                            }
+                        }
+                        .product-description {
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            overflow: hidden;
+                            color: $color-fourth;
+                            font-size: 16px;
+                            line-height: 26px;
+                            margin-bottom: 10px;
+                        }
+                        .product-price {
+                            display: flex;
+                            align-items: center;
+                            gap: 12px;
+                            p:first-child {
+                                font-family: SFpro600;
+                                font-size: 20px;
+                                line-height: 23.87px;
+                            }
+                            p:last-child {
+                                font-size: 18px;
+                                font-weight: 300;
+                                line-height: 21.48px;
+                                text-decoration: line-through;
+                            }
+                        }
+                        .card-bottom {
+                            display: flex;
+                            justify-content: space-between;
+                            button {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .product-isNaqd {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        position: absolute;
+                        top: 17px;
+                        left: 12px;
+                        cursor: pointer;
+                        p {
+                            color: $color-fourth;
+                            font-size: 16px;
+                            line-height: 16.71px;
+                        }
+                    }
+                    .product-sale {
+                        width: 51px;
+                        height: 30px;
+                        background: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 14.32px;
+                        position: absolute;
+                        right: 12px;
+                        top: 12px;
+                        cursor: pointer;
+                    }
+                    .product-gift {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        background: #fff;
+                        padding: 6px 8px;
+                        position: absolute;
+                        left: 12px;
+                        top: 49px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .benefits-section {
+            margin-bottom: 100px;
+            .benefits-top {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 30px;
+                margin-bottom: 82px;
+                .benefits-titlePart {
+                    max-width: 605px;
+                    h3 {
+                        color: $color-third;
+                        font-family: SFpro600;
+                        font-size: 32px;
+                        line-height: 42px;
+                        margin-bottom: 24px;
+                    }
+                    p {
+                        color: $color-fourth;
+                        font-size: 18px;
+                        line-height: 32px;
+                    }
+                    div {
+                        margin-top: 24px;
+                        div {
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            gap: 32px;
+                            p {
+                                display: flex;
+                                align-items: center;
+                                gap: 12px;
+                            }
+                        }
+                        div:last-child {
+                            display: flex;
+                            align-items: center;
+                            gap: 50px;
+                            margin-top: 16px;
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
+            }
+            .benefits-bottom {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 30px;
+                .benefits-titlePart {
+                    max-width: 605px;
+                    h3 {
+                        color: $color-third;
+                        font-family: SFpro600;
+                        font-size: 32px;
+                        line-height: 42px;
+                        margin-bottom: 24px;
+                    }
+                    p {
+                        color: $color-fourth;
+                        font-size: 18px;
+                        line-height: 32px;
+                    }
+                    p:last-child{
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+        .connection-section {
+            background: #F2F8FF;
+            padding-top: 64px;
+            padding-bottom: 54px;
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2 {
+                    color: $color-third;
+                    font-family: SFpro;
+                    font-size: 44px;
+                    line-height: 62px;
+                    margin-bottom: 24px;
+                    text-align: center;
+                }
+                p {
+                    margin-bottom: 24px;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: $color-fourth;
+                    max-width: 518px;
+                    text-align: center;
+                }
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 24px;
+                    align-items: center;
+                    justify-content: center;
+                    input {
+                        border: none;
+                        padding: 16px 16px;
+                        font-size: 16px;
+                        background: #e9eff6;
+                    }
+                    button {
+                        font-size: 16px;
+                        width: 249.667px;
+                        font-weight: 600;
+                        line-height: 26px;
+                        padding: 13px 70px;
+                        background: #4295E4;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .liked-section {
+            display: none;
+            background: white;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 110;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+.liked-opened {
+    .liked-section {
+        display: block;
+        .x-btn {
+            position: absolute;
+            right: 0;
+        }
+        .container {
+            .products-group {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 29.3px;
+                flex-wrap: wrap;
+                .product {
+                    width: 288px;
+                    background: $color-fifth;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    .product-img {
+                        width: 200px;
+                    }
+                    .product-title {
+                        background: white;
+                        padding: 10px 12px;
+                        border-bottom: 1px solid #eaeaea;
+                        border-left: 1px solid #eaeaea;
+                        border-right: 1px solid #eaeaea;
+                        h3 {
+                            font-size: 24px;
+                            margin-bottom: 6px;
+                        }
+                        div {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                            margin-bottom: 6px;
+                            p {
+                                color: $color-fourth;
+                                font-size: 13px;
+                                line-height: 21px;
+                            }
+                        }
+                        .product-description {
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            overflow: hidden;
+                            color: $color-fourth;
+                            font-size: 16px;
+                            line-height: 26px;
+                            margin-bottom: 10px;
+                        }
+                        .product-price {
+                            display: flex;
+                            align-items: center;
+                            gap: 12px;
+                            p:first-child {
+                                font-family: SFpro600;
+                                font-size: 20px;
+                                line-height: 23.87px;
+                            }
+                            p:last-child {
+                                font-size: 18px;
+                                font-weight: 300;
+                                line-height: 21.48px;
+                                text-decoration: line-through;
+                            }
+                        }
+                        .card-bottom {
+                            display: flex;
+                            justify-content: space-between;
+                            button {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .product-isNaqd {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        position: absolute;
+                        top: 17px;
+                        left: 12px;
+                        cursor: pointer;
+                        p {
+                            color: $color-fourth;
+                            font-size: 16px;
+                            line-height: 16.71px;
+                        }
+                    }
+                    .product-sale {
+                        width: 51px;
+                        height: 30px;
+                        background: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 14.32px;
+                        position: absolute;
+                        right: 12px;
+                        top: 12px;
+                        cursor: pointer;
+                    }
+                    .product-gift {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        background: #fff;
+                        padding: 6px 8px;
+                        position: absolute;
+                        left: 12px;
+                        top: 49px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1279px) {
+    main {
+        .benefits-section {
+            .benefits-top {
+                img {
+                    order: -1 !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 644px) {
+    main {
+        .benefits-section {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    main {
+        .benefits-section {
+            .benefits-top {
+                .benefits-titlePart {
+                    div {
+                        div {
+                            flex-direction: column;
+                            align-items: start !important;
+                            gap: 16px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
