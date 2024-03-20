@@ -158,12 +158,15 @@ body {
 }
 
 @media (max-width: 906px) {
-    header {
-        .header-top {
-            p, a {
-                font-size: 12px !important;
-            }
+    .header-top {
+        p, a {
+            font-size: 12px !important;
         }
+        a {
+            position: static !important;
+        }
+    }
+    header {
         .header-bottom {
            div {
             margin-left: 0 !important;

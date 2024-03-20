@@ -194,8 +194,11 @@ body .navbar-shrink .header-bottom {
   }
 }
 @media (max-width: 906px) {
-  header .header-top p, header .header-top a {
+  .header-top p, .header-top a {
     font-size: 12px !important;
+  }
+  .header-top a {
+    position: static !important;
   }
   header .header-bottom div {
     margin-left: 0 !important;
